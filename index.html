@@ -150,31 +150,31 @@
         function pop_WebreasprotegidasO1_1(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['area_id'] !== null ? autolinker.link(String(feature.properties['area_id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">ID área</th><td>' + (feature.properties['area_id'] !== null ? autolinker.link(String(feature.properties['area_id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['nombre'] !== null ? autolinker.link(String(feature.properties['nombre']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">Nombre</th><td>' + (feature.properties['nombre'] !== null ? autolinker.link(String(feature.properties['nombre']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['jurisdiccion'] !== null ? autolinker.link(String(feature.properties['jurisdiccion']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">Jurisdicción</th><td>' + (feature.properties['jurisdiccion'] !== null ? autolinker.link(String(feature.properties['jurisdiccion']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['superficie_ha'] !== null ? autolinker.link(String(feature.properties['superficie_ha']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">Superficie (ha)</th><td>' + (feature.properties['superficie_ha'] !== null ? autolinker.link(String(feature.properties['superficie_ha']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['focos_dentro'] !== null ? autolinker.link(String(feature.properties['focos_dentro']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">Focos dentro del área</th><td>' + (feature.properties['focos_dentro'] !== null ? autolinker.link(String(feature.properties['focos_dentro']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['focos_0_5km'] !== null ? autolinker.link(String(feature.properties['focos_0_5km']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">Focos a 0-5 km</th><td>' + (feature.properties['focos_0_5km'] !== null ? autolinker.link(String(feature.properties['focos_0_5km']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['focos_5_10km'] !== null ? autolinker.link(String(feature.properties['focos_5_10km']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">Focos a 5-10 km</th><td>' + (feature.properties['focos_5_10km'] !== null ? autolinker.link(String(feature.properties['focos_5_10km']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['focos_cada_1000ha'] !== null ? autolinker.link(String(feature.properties['focos_cada_1000ha']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">Focos cada 1.000 ha</th><td>' + (feature.properties['focos_cada_1000ha'] !== null ? autolinker.link(String(feature.properties['focos_cada_1000ha']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['dias_con_fuego'] !== null ? autolinker.link(String(feature.properties['dias_con_fuego']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">Días con fuego</th><td>' + (feature.properties['dias_con_fuego'] !== null ? autolinker.link(String(feature.properties['dias_con_fuego']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
@@ -216,19 +216,19 @@
         function pop_Cuartelesdebomberos_2(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['cuartel_id'] !== null ? autolinker.link(String(feature.properties['cuartel_id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">ID cuartel</th><td>' + (feature.properties['cuartel_id'] !== null ? autolinker.link(String(feature.properties['cuartel_id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['entidad_ign'] !== null ? autolinker.link(String(feature.properties['entidad_ign']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">Entidad IGN</th><td>' + (feature.properties['entidad_ign'] !== null ? autolinker.link(String(feature.properties['entidad_ign']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['nombre'] !== null ? autolinker.link(String(feature.properties['nombre']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">Nombre</th><td>' + (feature.properties['nombre'] !== null ? autolinker.link(String(feature.properties['nombre']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['departamento_id'] !== null ? autolinker.link(String(feature.properties['departamento_id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">ID departamento</th><td>' + (feature.properties['departamento_id'] !== null ? autolinker.link(String(feature.properties['departamento_id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['fuente'] !== null ? autolinker.link(String(feature.properties['fuente']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">Fuente</th><td>' + (feature.properties['fuente'] !== null ? autolinker.link(String(feature.properties['fuente']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
@@ -277,19 +277,19 @@
         function pop_Densidaddefocoshexgonos2km_3(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(String(feature.properties['id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">ID hexágono</th><td>' + (feature.properties['id'] !== null ? autolinker.link(String(feature.properties['id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['focos'] !== null ? autolinker.link(String(feature.properties['focos']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">Focos</th><td>' + (feature.properties['focos'] !== null ? autolinker.link(String(feature.properties['focos']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['frp_mw'] !== null ? autolinker.link(String(feature.properties['frp_mw']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">FRP total (MW)</th><td>' + (feature.properties['frp_mw'] !== null ? autolinker.link(String(feature.properties['frp_mw']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['primer_foco'] !== null ? autolinker.link(String(feature.properties['primer_foco']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">Primer foco</th><td>' + (feature.properties['primer_foco'] !== null ? autolinker.link(String(feature.properties['primer_foco']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['ultimo_foco'] !== null ? autolinker.link(String(feature.properties['ultimo_foco']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">Último foco</th><td>' + (feature.properties['ultimo_foco'] !== null ? autolinker.link(String(feature.properties['ultimo_foco']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
@@ -393,46 +393,46 @@
         function pop_O2Exposicindelocalidades_4(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['localidad_id'] !== null ? autolinker.link(String(feature.properties['localidad_id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">ID localidad</th><td>' + (feature.properties['localidad_id'] !== null ? autolinker.link(String(feature.properties['localidad_id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['localidad'] !== null ? autolinker.link(String(feature.properties['localidad']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">Localidad</th><td>' + (feature.properties['localidad'] !== null ? autolinker.link(String(feature.properties['localidad']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['es_capital'] !== null ? autolinker.link(String(feature.properties['es_capital']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">Capital provincial</th><td>' + (feature.properties['es_capital'] !== null ? autolinker.link(String(feature.properties['es_capital']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['departamento'] !== null ? autolinker.link(String(feature.properties['departamento']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">Departamento</th><td>' + (feature.properties['departamento'] !== null ? autolinker.link(String(feature.properties['departamento']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['poblacion_departamento'] !== null ? autolinker.link(String(feature.properties['poblacion_departamento']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">Población del departamento</th><td>' + (feature.properties['poblacion_departamento'] !== null ? autolinker.link(String(feature.properties['poblacion_departamento']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['focos_5km'] !== null ? autolinker.link(String(feature.properties['focos_5km']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">Focos a ≤ 5 km</th><td>' + (feature.properties['focos_5km'] !== null ? autolinker.link(String(feature.properties['focos_5km']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['focos_10km'] !== null ? autolinker.link(String(feature.properties['focos_10km']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">Focos a ≤ 10 km</th><td>' + (feature.properties['focos_10km'] !== null ? autolinker.link(String(feature.properties['focos_10km']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['dias_con_fuego_10km'] !== null ? autolinker.link(String(feature.properties['dias_con_fuego_10km']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">Días con fuego (≤ 10 km)</th><td>' + (feature.properties['dias_con_fuego_10km'] !== null ? autolinker.link(String(feature.properties['dias_con_fuego_10km']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['frp_10km_mw'] !== null ? autolinker.link(String(feature.properties['frp_10km_mw']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">FRP a ≤ 10 km (MW)</th><td>' + (feature.properties['frp_10km_mw'] !== null ? autolinker.link(String(feature.properties['frp_10km_mw']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['primer_foco'] !== null ? autolinker.link(String(feature.properties['primer_foco']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">Primer foco</th><td>' + (feature.properties['primer_foco'] !== null ? autolinker.link(String(feature.properties['primer_foco']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['ultimo_foco'] !== null ? autolinker.link(String(feature.properties['ultimo_foco']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">Último foco</th><td>' + (feature.properties['ultimo_foco'] !== null ? autolinker.link(String(feature.properties['ultimo_foco']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['foco_mas_cercano_km'] !== null ? autolinker.link(String(feature.properties['foco_mas_cercano_km']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">Foco más cercano (km)</th><td>' + (feature.properties['foco_mas_cercano_km'] !== null ? autolinker.link(String(feature.properties['foco_mas_cercano_km']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['indice_exposicion'] !== null ? autolinker.link(String(feature.properties['indice_exposicion']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">Índice de exposición (0-100)</th><td>' + (feature.properties['indice_exposicion'] !== null ? autolinker.link(String(feature.properties['indice_exposicion']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['clase_exposicion'] !== null ? autolinker.link(String(feature.properties['clase_exposicion']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">Clase de exposición</th><td>' + (feature.properties['clase_exposicion'] !== null ? autolinker.link(String(feature.properties['clase_exposicion']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
